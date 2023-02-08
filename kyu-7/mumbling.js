@@ -78,19 +78,19 @@ const stringer = function accum(s) {
    let array = [];
    for (let e = 0; e < str.length; e += 1) {
       console.log(str[e]);
-      array.push(word(str[e], e));
+      array.push(worde(str[e], e));
    }
    console.log(array);
 
    const newArr = array.map(
-      (word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+      (worde) => worde.charAt(0).toUpperCase() + worde.slice(1).toLowerCase()
    );
    console.log(newArr);
 
    return newArr.join("-");
 };
 
-const word = (element, index) => {
+const worde = (element, index) => {
    let prob = [];
    console.log(typeof element);
    console.log(typeof index);
@@ -101,6 +101,6 @@ const word = (element, index) => {
    return prob.join("");
 };
 
-// console.log(word("r", 2));
+// console.log(worde("r", 2));
 
 console.log(stringer("ZpglnRxqenU"));
